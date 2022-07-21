@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let stepper = AppStepper()
         let initFlow = InitFlow()
+        
         coordinator.coordinate(flow: initFlow, with: stepper)
         Flows.use(initFlow, when: .created) { root in
             window.backgroundColor = UIColor.white

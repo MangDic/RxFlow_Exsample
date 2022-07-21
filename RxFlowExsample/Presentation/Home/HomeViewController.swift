@@ -28,7 +28,10 @@ class HomeViewController: UIViewController, Stepper {
         
         MainTabBarContoller.shared.tabBarItem.title = "홈"
         
+        view.addSubview(titleLabel)
         view.addSubview(moveButton)
+        
+        titleLabel.snp.makeConstraints { $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide) }
         
         moveButton.snp.makeConstraints {
             $0.center.equalToSuperview()
@@ -45,6 +48,13 @@ class HomeViewController: UIViewController, Stepper {
     }
     
     // MARK: View
+    lazy var titleLabel = UILabel().then {
+        $0.text = "Home"
+        $0.textColor = .black
+        $0.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        $0.textAlignment = .center
+    }
+    
     lazy var moveButton = UIButton().then {
         $0.setTitle("Move To InfoVC", for: .normal)
         $0.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)

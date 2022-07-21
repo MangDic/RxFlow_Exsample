@@ -22,3 +22,4 @@ enum MainSteps: Step {
     case secondRequired
     case thirdRequired
 }
+

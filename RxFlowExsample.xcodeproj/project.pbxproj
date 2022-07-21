@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A1288933AB00125FA1 /* FirstView.swift */; };
+		C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A3288934BD00125FA1 /* SettingView.swift */; };
+		C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A5288938BF00125FA1 /* SecondView.swift */; };
+		C3BA80A92889398300125FA1 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A82889398300125FA1 /* ThirdView.swift */; };
 		C3CBD1DB2885210600658324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD1DA2885210600658324 /* AppDelegate.swift */; };
 		C3CBD1DF2885210600658324 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD1DE2885210600658324 /* HomeViewController.swift */; };
 		C3CBD1E42885210A00658324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CBD1E32885210A00658324 /* Assets.xcassets */; };
@@ -31,7 +35,6 @@
 		C3CBD28D2886968D00658324 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD28C2886968D00658324 /* SecondViewController.swift */; };
 		C3CBD28F2886ABF000658324 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD28E2886ABF000658324 /* ThirdViewController.swift */; };
 		C3CBD2932887BB2A00658324 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2922887BB2A00658324 /* SettingViewModel.swift */; };
-		C3CBD2952887D34800658324 /* FirstViewFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2942887D34700658324 /* FirstViewFlow.swift */; };
 		C3CBD2972887DBBC00658324 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2962887DBBB00658324 /* ViewModel.swift */; };
 		C3CBD29A2887DBF900658324 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD2992887DBF900658324 /* Reusable */; };
 		C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD29B2887DCC200658324 /* ViewModelType.swift */; };
@@ -57,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3BA80A1288933AB00125FA1 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		C3BA80A3288934BD00125FA1 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C3BA80A5288938BF00125FA1 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		C3BA80A82889398300125FA1 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		C3CBD1D72885210600658324 /* RxFlowExsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowExsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBD1DA2885210600658324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBD1DE2885210600658324 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +89,6 @@
 		C3CBD28C2886968D00658324 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C3CBD28E2886ABF000658324 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C3CBD2922887BB2A00658324 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
-		C3CBD2942887D34700658324 /* FirstViewFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewFlow.swift; sourceTree = "<group>"; };
 		C3CBD2962887DBBB00658324 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C3CBD29B2887DCC200658324 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C3CBD2A22887E7FD00658324 /* FlowSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowSugar.swift; sourceTree = "<group>"; };
@@ -118,6 +124,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3BA809F2889339300125FA1 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD28A2886966E00658324 /* FirstViewController.swift */,
+				C3BA80A1288933AB00125FA1 /* FirstView.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		C3BA80A02889339F00125FA1 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD28C2886968D00658324 /* SecondViewController.swift */,
+				C3BA80A5288938BF00125FA1 /* SecondView.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		C3BA80A72889395900125FA1 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD28E2886ABF000658324 /* ThirdViewController.swift */,
+				C3BA80A82889398300125FA1 /* ThirdView.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		C3BA80AA28893ADC00125FA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD1DA2885210600658324 /* AppDelegate.swift */,
+				C3CBD1E32885210A00658324 /* Assets.xcassets */,
+				C3CBD1E52885210A00658324 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3BA80AE28893BDE00125FA1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD2292885366100658324 /* Log.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C3CBD1CE2885210600658324 = {
 			isa = PBXGroup;
 			children = (
@@ -142,15 +193,12 @@
 		C3CBD1D92885210600658324 /* RxFlowExsample */ = {
 			isa = PBXGroup;
 			children = (
-				C3CBD211288522C600658324 /* Coordinator */,
-				C3CBD1DA2885210600658324 /* AppDelegate.swift */,
-				C3CBD1E32885210A00658324 /* Assets.xcassets */,
-				C3CBD1E52885210A00658324 /* LaunchScreen.storyboard */,
 				C3CBD1E82885210A00658324 /* Info.plist */,
-				C3CBD2292885366100658324 /* Log.swift */,
-				C3CBD2962887DBBB00658324 /* ViewModel.swift */,
-				C3CBD29B2887DCC200658324 /* ViewModelType.swift */,
-				C3CBD2A22887E7FD00658324 /* FlowSugar.swift */,
+				C3CBD2872886964400658324 /* Foundation */,
+				C3CBD219288524EB00658324 /* Presentation */,
+				C3CBD211288522C600658324 /* Coordinator */,
+				C3BA80AE28893BDE00125FA1 /* Service */,
+				C3BA80AA28893ADC00125FA1 /* Supporting Files */,
 			);
 			path = RxFlowExsample;
 			sourceTree = "<group>";
@@ -175,8 +223,6 @@
 		C3CBD211288522C600658324 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				C3CBD2872886964400658324 /* Foundation */,
-				C3CBD219288524EB00658324 /* Presentation */,
 				C3CBD212288522FC00658324 /* Steps */,
 				C3CBD2132885230100658324 /* Flow */,
 				C3CBD2142885231000658324 /* Stepper */,
@@ -198,7 +244,6 @@
 				C3CBD21C288525F200658324 /* HomeFlow.swift */,
 				C3CBD2172885238900658324 /* InitFlow.swift */,
 				C3CBD227288534F200658324 /* SettingFlow.swift */,
-				C3CBD2942887D34700658324 /* FirstViewFlow.swift */,
 				C3CBD2A42887E90B00658324 /* MessageFlow.swift */,
 			);
 			path = Flow;
@@ -250,6 +295,9 @@
 			isa = PBXGroup;
 			children = (
 				C3CBD21A288524FB00658324 /* MainTabBarContoller.swift */,
+				C3CBD29B2887DCC200658324 /* ViewModelType.swift */,
+				C3CBD2962887DBBB00658324 /* ViewModel.swift */,
+				C3CBD2A22887E7FD00658324 /* FlowSugar.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -259,6 +307,7 @@
 			children = (
 				C3CBD2892886965E00658324 /* SubView */,
 				C3CBD21E2885272F00658324 /* SettingViewController.swift */,
+				C3BA80A3288934BD00125FA1 /* SettingView.swift */,
 				C3CBD2922887BB2A00658324 /* SettingViewModel.swift */,
 			);
 			path = Setting;
@@ -267,9 +316,9 @@
 		C3CBD2892886965E00658324 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
-				C3CBD28A2886966E00658324 /* FirstViewController.swift */,
-				C3CBD28C2886968D00658324 /* SecondViewController.swift */,
-				C3CBD28E2886ABF000658324 /* ThirdViewController.swift */,
+				C3BA809F2889339300125FA1 /* First */,
+				C3BA80A02889339F00125FA1 /* Second */,
+				C3BA80A72889395900125FA1 /* Third */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -423,6 +472,7 @@
 				C3CBD28D2886968D00658324 /* SecondViewController.swift in Sources */,
 				C3CBD22A2885366100658324 /* Log.swift in Sources */,
 				C3CBD1DB2885210600658324 /* AppDelegate.swift in Sources */,
+				C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */,
 				C3CBD2A52887E90B00658324 /* MessageFlow.swift in Sources */,
 				C3CBD22C2885372900658324 /* HomeStepper.swift in Sources */,
 				C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */,
@@ -431,12 +481,14 @@
 				C3CBD22628852CC000658324 /* InfoViewController.swift in Sources */,
 				C3CBD21F2885272F00658324 /* SettingViewController.swift in Sources */,
 				C3CBD2182885238900658324 /* InitFlow.swift in Sources */,
+				C3BA80A92889398300125FA1 /* ThirdView.swift in Sources */,
 				C3CBD21B288524FB00658324 /* MainTabBarContoller.swift in Sources */,
-				C3CBD2952887D34800658324 /* FirstViewFlow.swift in Sources */,
 				C3CBD2932887BB2A00658324 /* SettingViewModel.swift in Sources */,
 				C3CBD221288527FA00658324 /* AppStepper.swift in Sources */,
 				C3CBD28F2886ABF000658324 /* ThirdViewController.swift in Sources */,
+				C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */,
 				C3CBD28B2886966E00658324 /* FirstViewController.swift in Sources */,
+				C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

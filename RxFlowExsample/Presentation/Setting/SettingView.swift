@@ -1,43 +1,58 @@
 //
-//  SettingViewController.swift
+//  SettingView.swift
 //  RxFlowExsample
 //
-//  Created by 이명직 on 2022/07/18.
+//  Created by 이명직 on 2022/07/21.
 //
 
-import Foundation
 import UIKit
 import RxSwift
+import RxRelay
 
-class SettingViewController: UIViewController, ViewModelProtocol {
-    typealias ViewModelType = SettingViewModel
-    
-    var viewModel: ViewModelType!
-    
+class SettingView: UIView {
     var disposeBag = DisposeBag()
+    let actionRelay = PublishRelay<SettingActionType>()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
+    // MARK: Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
         setupLayout()
         bind()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: Dependency Injection
+    func setupDI(observable: PublishRelay<SettingActionType>) {
+        actionRelay.bind(to: observable).disposed(by: disposeBag)
+    }
+    
+    // MARK: Binding
     private func bind() {
         firstVCButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 guard let `self` = self else { return }
-                self.viewModel.steps.accept(MainSteps.firstRequired)
+                self.actionRelay.accept(.nextScreen(step: .firstRequired))
             }).disposed(by: disposeBag)
         
         secondVCButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 guard let `self` = self else { return }
-                self.viewModel.steps.accept(MainSteps.secondRequired)
+                self.actionRelay.accept(.nextScreen(step: .secondRequired))
             }).disposed(by: disposeBag)
     }
     
     // MARK: View
+    lazy var titleLabel = UILabel().then {
+        $0.text = "Setting"
+        $0.textColor = .black
+        $0.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        $0.textAlignment = .center
+    }
+    
     lazy var stack = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 20
@@ -61,11 +76,15 @@ class SettingViewController: UIViewController, ViewModelProtocol {
     }
     
     private func setupLayout() {
-        view.backgroundColor = .white
-        view.addSubview(stack)
+        backgroundColor = .white
+        
+        addSubview(titleLabel)
+        addSubview(stack)
         
         stack.addArrangedSubview(firstVCButton)
         stack.addArrangedSubview(secondVCButton)
+        
+        titleLabel.snp.makeConstraints { $0.top.leading.trailing.equalTo(safeAreaLayoutGuide) }
         
         stack.snp.makeConstraints {
             $0.center.equalToSuperview()

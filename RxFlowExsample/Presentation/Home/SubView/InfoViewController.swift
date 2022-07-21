@@ -27,6 +27,13 @@ class InfoViewController: UIViewController {
     }
     
     // MARK: View
+    lazy var titleLabel = UILabel().then {
+        $0.text = "Info"
+        $0.textColor = .black
+        $0.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        $0.textAlignment = .center
+    }
+    
     lazy var backButton = UIButton().then {
         $0.setTitle("뒤로가기", for: .normal)
         $0.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
@@ -37,7 +44,11 @@ class InfoViewController: UIViewController {
     
     private func setupLayout() {
         view.backgroundColor = .white
+        
+        view.addSubview(titleLabel)
         view.addSubview(backButton)
+        
+        titleLabel.snp.makeConstraints { $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide) }
         
         backButton.snp.makeConstraints {
             $0.center.equalToSuperview()
