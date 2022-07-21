@@ -16,15 +16,7 @@ class SettingFlow: Flow {
         return self.rootViewController
     }
     
-    var viewModel: SettingViewModel
-    
-    init(settingViewModel: SettingViewModel) {
-        self.viewModel = settingViewModel
-        
-        rootViewController.tabBarItem.selectedImage = UIImage(systemName: "gearshape.fill")
-        rootViewController.tabBarItem.title = "설정"
-        rootViewController.tabBarItem.image = UIImage(systemName: "gearshape")
-    }
+    var viewModel = SettingViewModel()
     
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? MainSteps else { return .none }
@@ -46,6 +38,10 @@ class SettingFlow: Flow {
     }
     
     private func setSettingScreen() -> FlowContributors {
+        rootViewController.tabBarItem.selectedImage = UIImage(systemName: "gearshape.fill")
+        rootViewController.tabBarItem.title = "설정"
+        rootViewController.tabBarItem.image = UIImage(systemName: "gearshape")
+        
         return FlowSugar(viewModel, SettingViewController.self)
             .oneStepPushBy(self.rootViewController)
     }

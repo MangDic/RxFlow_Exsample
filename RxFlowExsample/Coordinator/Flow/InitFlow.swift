@@ -17,7 +17,7 @@ class InitFlow: Flow {
     private lazy var rootViewController = MainTabBarContoller.shared
     
     private let homeFlow = HomeFlow()
-    private let settingFlow = SettingFlow(settingViewModel: SettingViewModel())
+    private let settingFlow = SettingFlow()
     
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? MainSteps else { return .none }
