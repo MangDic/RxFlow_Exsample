@@ -10,7 +10,9 @@ import RxFlow
 import UIKit
 
 class HomeFlow: Flow {
-    let rootViewController = UINavigationController(rootViewController: HomeViewController())
+    let rootViewController = UINavigationController(rootViewController: HomeViewController()).then {
+        $0.navigationBar.isHidden = true
+    }
     
     var root: Presentable {
         return rootViewController
