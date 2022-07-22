@@ -15,6 +15,6 @@ class HomeStepper: Stepper {
     var steps = PublishRelay<Step>()
     
     var initialStep: Step {
-        return MainSteps.initialization
+        return MainSteps.home
     }
 }

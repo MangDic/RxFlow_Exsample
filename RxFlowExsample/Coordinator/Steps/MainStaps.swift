@@ -11,6 +11,7 @@ enum MainSteps: Step {
     case initialization
     case back
     
+    case home
     case setting
     // Home
     case infoRequired

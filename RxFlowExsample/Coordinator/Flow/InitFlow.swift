@@ -35,11 +35,6 @@ class InitFlow: Flow {
         rootViewController.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.8695364594, green: 0.8643680215, blue: 0.8735097051, alpha: 1)
         rootViewController.tabBar.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
     
-        /// setup Home ViewController
-        HomeFlow.shared.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
-        HomeFlow.shared.tabBarItem.title = "홈"
-        HomeFlow.shared.tabBarItem.image = UIImage(systemName: "house")
-        
         /// setup Message ViewController
         let flows: [Flow] = [homeFlow, settingFlow]
         
@@ -47,9 +42,8 @@ class InitFlow: Flow {
             guard let `self` = self else { return }
             self.rootViewController.viewControllers = root
         })
-        
         return .multiple(flowContributors:
-                            [FlowContributor.contribute(withNextPresentable: homeFlow, withNextStepper: HomeStepper.shared),
+                            [FlowContributor.contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.home)),
                              FlowContributor.contribute(withNextPresentable: settingFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.setting))])
     }
 }

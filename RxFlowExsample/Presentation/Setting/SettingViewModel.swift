@@ -30,6 +30,7 @@ class SettingViewModel: Stepper, ViewModelType {
     var disposeBag = DisposeBag()
     var steps = PublishRelay<Step>()
     
+    /// 이 Stepper의 초기 Step을 지정해 줍니다.
     var initialStep: Step {
         return MainSteps.initialization
     }

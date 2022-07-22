@@ -10,16 +10,18 @@ import RxFlow
 import UIKit
 
 class HomeFlow: Flow {
-    static let shared = UINavigationController(rootViewController: HomeViewController()).then { $0.isNavigationBarHidden = true }
+    let rootViewController = UINavigationController(rootViewController: HomeViewController())
     
     var root: Presentable {
-        return HomeFlow.shared
+        return rootViewController
     }
     
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? MainSteps else { return .none }
         
         switch step {
+        case .home:
+            return setupHomeScreen()
         case .infoRequired:
             return navigateToInfoViewScreen()
         case .back:
@@ -30,19 +32,23 @@ class HomeFlow: Flow {
     }
     
     private func setupHomeScreen() -> FlowContributors {
-        return .one(flowContributor: .contribute(withNextPresentable: HomeFlow.shared, withNextStepper: HomeStepper.shared))
+        rootViewController.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
+        rootViewController.tabBarItem.title = "홈"
+        rootViewController.tabBarItem.image = UIImage(systemName: "house")
+        
+        return .one(flowContributor: .contribute(withNextPresentable: self.root, withNextStepper: HomeStepper.shared))
     }
     
     private func navigateToInfoViewScreen() -> FlowContributors {
         let vc = InfoViewController()
-        HomeFlow.shared.pushViewController(vc, animated: true)
+        rootViewController.pushViewController(vc, animated: true)
         MainTabBarContoller.shared.tabBar.isHidden = true
         return .none
     }
     
     private func popupViewController() -> FlowContributors {
-        HomeFlow.shared.popToRootViewController(animated: true)
-        if HomeFlow.shared.viewControllers.count == 1 {
+        rootViewController.popToRootViewController(animated: true)
+        if rootViewController.viewControllers.count == 1 {
             MainTabBarContoller.shared.tabBar.isHidden = false
         }
         return .none
