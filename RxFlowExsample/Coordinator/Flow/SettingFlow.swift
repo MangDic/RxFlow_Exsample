@@ -26,12 +26,14 @@ class SettingFlow: Flow {
             return setSettingScreen()
         case .firstRequired:
             return navigateToFirstScreen()
-        case .secondRequired:
-            return navigateToSecondScreen()
         case .thirdRequired:
             return navigateToThirdScreen()
+        case .modalRequired:
+            return navigateToModalScreen()
         case .back:
-            return popupViewController()
+            return popViewController()
+        case .dismiss:
+            return dismiss()
         default:
             return .none
         }
@@ -53,23 +55,27 @@ class SettingFlow: Flow {
             .oneStepPushBy(self.rootViewController)
     }
     
-    private func navigateToSecondScreen() -> FlowContributors {
-        MainTabBarContoller.shared.tabBar.isHidden = true
-        return FlowSugar(viewModel, SecondViewController.self)
-            .oneStepPushBy(self.rootViewController)
-    }
-    
     private func navigateToThirdScreen() -> FlowContributors {
         MainTabBarContoller.shared.tabBar.isHidden = true
         return FlowSugar(viewModel, ThirdViewController.self)
             .oneStepPushBy(self.rootViewController)
     }
     
-    private func popupViewController() -> FlowContributors {
+    private func popViewController() -> FlowContributors {
         rootViewController.popViewController(animated: true)
         if rootViewController.viewControllers.count == 1 {
             MainTabBarContoller.shared.tabBar.isHidden = false
         }
+        return .none
+    }
+    
+    private func navigateToModalScreen() -> FlowContributors {
+        return FlowSugar(viewModel, ModalViewController.self)
+            .oneStepPopoverPresent(self.rootViewController)
+    }
+    
+    private func dismiss() -> FlowContributors {
+        self.rootViewController.dismiss(animated: true)
         return .none
     }
 }

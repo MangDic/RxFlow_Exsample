@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  RxFlowExsample
 //
 //  Created by 이명직 on 2022/07/19.
@@ -7,10 +7,10 @@
 
 import Foundation
 import UIKit
-import RxRelay
 import RxSwift
+import RxRelay
 
-class SecondViewController: UIViewController, ViewModelProtocol {
+class FirstViewController: UIViewController, ViewModelProtocol {
     typealias ViewModel = SettingViewModel
     var viewModel: SettingViewModel!
     
@@ -18,7 +18,7 @@ class SecondViewController: UIViewController, ViewModelProtocol {
     
     let actionRelay = PublishRelay<SettingActionType>()
     
-    lazy var secondView = SecondView()
+    lazy var firstView = FirstView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +30,11 @@ class SecondViewController: UIViewController, ViewModelProtocol {
     // MARK: ViewModel Binding
     private func bind() {
         _ = viewModel.transform(req: ViewModel.Input(actionTrigger: actionRelay.asObservable()))
-        secondView.setupDI(observable: actionRelay)
+        firstView.setupDI(observable: actionRelay)
     }
     
     private func setupLayout() {
-        view.addSubview(secondView)
-        secondView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        view.addSubview(firstView)
+        firstView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
 }

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A1288933AB00125FA1 /* FirstView.swift */; };
-		C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A3288934BD00125FA1 /* SettingView.swift */; };
-		C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A5288938BF00125FA1 /* SecondView.swift */; };
 		C3BA80A92889398300125FA1 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A82889398300125FA1 /* ThirdView.swift */; };
 		C3CBD1DB2885210600658324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD1DA2885210600658324 /* AppDelegate.swift */; };
 		C3CBD1DF2885210600658324 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD1DE2885210600658324 /* HomeViewController.swift */; };
@@ -20,26 +17,36 @@
 		C3CBD1FE2885210B00658324 /* RxFlowExsampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD1FD2885210B00658324 /* RxFlowExsampleUITestsLaunchTests.swift */; };
 		C3CBD20C2885217600658324 /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD20B2885217600658324 /* RxFlow */; };
 		C3CBD20F2885219600658324 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD20E2885219600658324 /* Then */; };
-		C3CBD2162885233400658324 /* MainStaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2152885233400658324 /* MainStaps.swift */; };
 		C3CBD2182885238900658324 /* InitFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2172885238900658324 /* InitFlow.swift */; };
-		C3CBD21B288524FB00658324 /* MainTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD21A288524FB00658324 /* MainTabBarContoller.swift */; };
 		C3CBD21D288525F200658324 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD21C288525F200658324 /* HomeFlow.swift */; };
-		C3CBD21F2885272F00658324 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD21E2885272F00658324 /* SettingViewController.swift */; };
 		C3CBD221288527FA00658324 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD220288527FA00658324 /* AppStepper.swift */; };
 		C3CBD22428852BCF00658324 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD22328852BCF00658324 /* SnapKit */; };
 		C3CBD22628852CC000658324 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD22528852CC000658324 /* InfoViewController.swift */; };
 		C3CBD228288534F200658324 /* SettingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD227288534F200658324 /* SettingFlow.swift */; };
 		C3CBD22A2885366100658324 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2292885366100658324 /* Log.swift */; };
 		C3CBD22C2885372900658324 /* HomeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD22B2885372900658324 /* HomeStepper.swift */; };
-		C3CBD28B2886966E00658324 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD28A2886966E00658324 /* FirstViewController.swift */; };
-		C3CBD28D2886968D00658324 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD28C2886968D00658324 /* SecondViewController.swift */; };
 		C3CBD28F2886ABF000658324 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD28E2886ABF000658324 /* ThirdViewController.swift */; };
 		C3CBD2932887BB2A00658324 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2922887BB2A00658324 /* SettingViewModel.swift */; };
 		C3CBD2972887DBBC00658324 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2962887DBBB00658324 /* ViewModel.swift */; };
 		C3CBD29A2887DBF900658324 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD2992887DBF900658324 /* Reusable */; };
 		C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD29B2887DCC200658324 /* ViewModelType.swift */; };
 		C3CBD2A32887E7FD00658324 /* FlowSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2A22887E7FD00658324 /* FlowSugar.swift */; };
-		C3CBD2A52887E90B00658324 /* MessageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2A42887E90B00658324 /* MessageFlow.swift */; };
+		C3D7ED6828912AC200FDB0D4 /* NewsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED6728912AC200FDB0D4 /* NewsFlow.swift */; };
+		C3D7ED6A28912AFD00FDB0D4 /* MainTabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED6928912AFD00FDB0D4 /* MainTabBarContoller.swift */; };
+		C3D7ED7628912B2200FDB0D4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED6C28912B2200FDB0D4 /* NewsViewController.swift */; };
+		C3D7ED7728912B2200FDB0D4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED6D28912B2200FDB0D4 /* NewsView.swift */; };
+		C3D7ED7828912B2200FDB0D4 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED6E28912B2200FDB0D4 /* NewsViewModel.swift */; };
+		C3D7ED7928912B2200FDB0D4 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED7028912B2200FDB0D4 /* NewsCell.swift */; };
+		C3D7ED7A28912B2200FDB0D4 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED7228912B2200FDB0D4 /* NewsModel.swift */; };
+		C3D7ED7B28912B2200FDB0D4 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED7428912B2200FDB0D4 /* NetworkController.swift */; };
+		C3D7ED7C28912B2200FDB0D4 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED7528912B2200FDB0D4 /* NewsService.swift */; };
+		C3D7ED7E28912B5200FDB0D4 /* MainStaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED7D28912B5200FDB0D4 /* MainStaps.swift */; };
+		C3D7ED9128912B9500FDB0D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED8428912B9500FDB0D4 /* FirstViewController.swift */; };
+		C3D7ED9228912B9500FDB0D4 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED8528912B9500FDB0D4 /* FirstView.swift */; };
+		C3D7ED9628912B9500FDB0D4 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED8B28912B9500FDB0D4 /* ModalViewController.swift */; };
+		C3D7ED9728912B9500FDB0D4 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED8C28912B9500FDB0D4 /* ModalView.swift */; };
+		C3D7ED9928912B9500FDB0D4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7ED8E28912B9500FDB0D4 /* SettingView.swift */; };
+		C3D7ED9A28912CEC00FDB0D4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD21E2885272F00658324 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +68,6 @@
 
 /* Begin PBXFileReference section */
 		C3BA80A1288933AB00125FA1 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		C3BA80A3288934BD00125FA1 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		C3BA80A5288938BF00125FA1 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		C3BA80A82889398300125FA1 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		C3CBD1D72885210600658324 /* RxFlowExsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowExsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBD1DA2885210600658324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,9 +80,7 @@
 		C3CBD1F72885210B00658324 /* RxFlowExsampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFlowExsampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBD1FB2885210B00658324 /* RxFlowExsampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFlowExsampleUITests.swift; sourceTree = "<group>"; };
 		C3CBD1FD2885210B00658324 /* RxFlowExsampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFlowExsampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C3CBD2152885233400658324 /* MainStaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStaps.swift; sourceTree = "<group>"; };
 		C3CBD2172885238900658324 /* InitFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitFlow.swift; sourceTree = "<group>"; };
-		C3CBD21A288524FB00658324 /* MainTabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarContoller.swift; sourceTree = "<group>"; };
 		C3CBD21C288525F200658324 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
 		C3CBD21E2885272F00658324 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C3CBD220288527FA00658324 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
@@ -86,13 +89,28 @@
 		C3CBD2292885366100658324 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C3CBD22B2885372900658324 /* HomeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStepper.swift; sourceTree = "<group>"; };
 		C3CBD28A2886966E00658324 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		C3CBD28C2886968D00658324 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C3CBD28E2886ABF000658324 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C3CBD2922887BB2A00658324 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		C3CBD2962887DBBB00658324 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C3CBD29B2887DCC200658324 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C3CBD2A22887E7FD00658324 /* FlowSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowSugar.swift; sourceTree = "<group>"; };
-		C3CBD2A42887E90B00658324 /* MessageFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFlow.swift; sourceTree = "<group>"; };
+		C3D7ED6728912AC200FDB0D4 /* NewsFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFlow.swift; sourceTree = "<group>"; };
+		C3D7ED6928912AFD00FDB0D4 /* MainTabBarContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarContoller.swift; path = "../../../RxFlow_Exsample-main 2/RxFlowExsample/Foundation/MainTabBarContoller.swift"; sourceTree = "<group>"; };
+		C3D7ED6C28912B2200FDB0D4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C3D7ED6D28912B2200FDB0D4 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		C3D7ED6E28912B2200FDB0D4 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C3D7ED7028912B2200FDB0D4 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C3D7ED7228912B2200FDB0D4 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C3D7ED7428912B2200FDB0D4 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		C3D7ED7528912B2200FDB0D4 /* NewsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		C3D7ED7D28912B5200FDB0D4 /* MainStaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainStaps.swift; path = "../../../../RxFlow_Exsample-main 2/RxFlowExsample/Coordinator/Steps/MainStaps.swift"; sourceTree = "<group>"; };
+		C3D7ED8428912B9500FDB0D4 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C3D7ED8528912B9500FDB0D4 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		C3D7ED8728912B9500FDB0D4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C3D7ED8828912B9500FDB0D4 /* ThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		C3D7ED8B28912B9500FDB0D4 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C3D7ED8C28912B9500FDB0D4 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		C3D7ED8E28912B9500FDB0D4 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,15 +149,6 @@
 				C3BA80A1288933AB00125FA1 /* FirstView.swift */,
 			);
 			path = First;
-			sourceTree = "<group>";
-		};
-		C3BA80A02889339F00125FA1 /* Second */ = {
-			isa = PBXGroup;
-			children = (
-				C3CBD28C2886968D00658324 /* SecondViewController.swift */,
-				C3BA80A5288938BF00125FA1 /* SecondView.swift */,
-			);
-			path = Second;
 			sourceTree = "<group>";
 		};
 		C3BA80A72889395900125FA1 /* Third */ = {
@@ -233,7 +242,7 @@
 		C3CBD212288522FC00658324 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
-				C3CBD2152885233400658324 /* MainStaps.swift */,
+				C3D7ED7D28912B5200FDB0D4 /* MainStaps.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -241,10 +250,10 @@
 		C3CBD2132885230100658324 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				C3D7ED6728912AC200FDB0D4 /* NewsFlow.swift */,
 				C3CBD21C288525F200658324 /* HomeFlow.swift */,
 				C3CBD2172885238900658324 /* InitFlow.swift */,
 				C3CBD227288534F200658324 /* SettingFlow.swift */,
-				C3CBD2A42887E90B00658324 /* MessageFlow.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 			children = (
 				C3CBD2852886962D00658324 /* Home */,
 				C3CBD2882886965000658324 /* Setting */,
+				C3D7ED6B28912B2200FDB0D4 /* News */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -294,7 +304,7 @@
 		C3CBD2872886964400658324 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C3CBD21A288524FB00658324 /* MainTabBarContoller.swift */,
+				C3D7ED6928912AFD00FDB0D4 /* MainTabBarContoller.swift */,
 				C3CBD29B2887DCC200658324 /* ViewModelType.swift */,
 				C3CBD2962887DBBB00658324 /* ViewModel.swift */,
 				C3CBD2A22887E7FD00658324 /* FlowSugar.swift */,
@@ -306,9 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				C3CBD2892886965E00658324 /* SubView */,
-				C3CBD21E2885272F00658324 /* SettingViewController.swift */,
-				C3BA80A3288934BD00125FA1 /* SettingView.swift */,
-				C3CBD2922887BB2A00658324 /* SettingViewModel.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -317,10 +324,96 @@
 			isa = PBXGroup;
 			children = (
 				C3BA809F2889339300125FA1 /* First */,
-				C3BA80A02889339F00125FA1 /* Second */,
+				C3D7ED7F28912B9500FDB0D4 /* Setting */,
 				C3BA80A72889395900125FA1 /* Third */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		C3D7ED6B28912B2200FDB0D4 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED6C28912B2200FDB0D4 /* NewsViewController.swift */,
+				C3D7ED6D28912B2200FDB0D4 /* NewsView.swift */,
+				C3D7ED6E28912B2200FDB0D4 /* NewsViewModel.swift */,
+				C3D7ED6F28912B2200FDB0D4 /* Cell */,
+				C3D7ED7128912B2200FDB0D4 /* Model */,
+				C3D7ED7328912B2200FDB0D4 /* Service */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C3D7ED6F28912B2200FDB0D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED7028912B2200FDB0D4 /* NewsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C3D7ED7128912B2200FDB0D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED7228912B2200FDB0D4 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3D7ED7328912B2200FDB0D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED7428912B2200FDB0D4 /* NetworkController.swift */,
+				C3D7ED7528912B2200FDB0D4 /* NewsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C3D7ED7F28912B9500FDB0D4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C3CBD21E2885272F00658324 /* SettingViewController.swift */,
+				C3D7ED8E28912B9500FDB0D4 /* SettingView.swift */,
+				C3CBD2922887BB2A00658324 /* SettingViewModel.swift */,
+				C3D7ED8228912B9500FDB0D4 /* SubView */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C3D7ED8228912B9500FDB0D4 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED8328912B9500FDB0D4 /* First */,
+				C3D7ED8628912B9500FDB0D4 /* Third */,
+				C3D7ED8928912B9500FDB0D4 /* Second */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		C3D7ED8328912B9500FDB0D4 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED8428912B9500FDB0D4 /* FirstViewController.swift */,
+				C3D7ED8528912B9500FDB0D4 /* FirstView.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		C3D7ED8628912B9500FDB0D4 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED8728912B9500FDB0D4 /* ThirdViewController.swift */,
+				C3D7ED8828912B9500FDB0D4 /* ThirdView.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		C3D7ED8928912B9500FDB0D4 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7ED8B28912B9500FDB0D4 /* ModalViewController.swift */,
+				C3D7ED8C28912B9500FDB0D4 /* ModalView.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,30 +558,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D7ED6A28912AFD00FDB0D4 /* MainTabBarContoller.swift in Sources */,
 				C3CBD1DF2885210600658324 /* HomeViewController.swift in Sources */,
+				C3D7ED9628912B9500FDB0D4 /* ModalViewController.swift in Sources */,
 				C3CBD228288534F200658324 /* SettingFlow.swift in Sources */,
+				C3D7ED9A28912CEC00FDB0D4 /* SettingViewController.swift in Sources */,
+				C3D7ED7628912B2200FDB0D4 /* NewsViewController.swift in Sources */,
 				C3CBD2972887DBBC00658324 /* ViewModel.swift in Sources */,
 				C3CBD2A32887E7FD00658324 /* FlowSugar.swift in Sources */,
-				C3CBD28D2886968D00658324 /* SecondViewController.swift in Sources */,
+				C3D7ED7728912B2200FDB0D4 /* NewsView.swift in Sources */,
 				C3CBD22A2885366100658324 /* Log.swift in Sources */,
 				C3CBD1DB2885210600658324 /* AppDelegate.swift in Sources */,
-				C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */,
-				C3CBD2A52887E90B00658324 /* MessageFlow.swift in Sources */,
+				C3D7ED7928912B2200FDB0D4 /* NewsCell.swift in Sources */,
+				C3D7ED7828912B2200FDB0D4 /* NewsViewModel.swift in Sources */,
 				C3CBD22C2885372900658324 /* HomeStepper.swift in Sources */,
 				C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */,
 				C3CBD21D288525F200658324 /* HomeFlow.swift in Sources */,
-				C3CBD2162885233400658324 /* MainStaps.swift in Sources */,
+				C3D7ED7C28912B2200FDB0D4 /* NewsService.swift in Sources */,
+				C3D7ED9928912B9500FDB0D4 /* SettingView.swift in Sources */,
 				C3CBD22628852CC000658324 /* InfoViewController.swift in Sources */,
-				C3CBD21F2885272F00658324 /* SettingViewController.swift in Sources */,
 				C3CBD2182885238900658324 /* InitFlow.swift in Sources */,
+				C3D7ED7B28912B2200FDB0D4 /* NetworkController.swift in Sources */,
 				C3BA80A92889398300125FA1 /* ThirdView.swift in Sources */,
-				C3CBD21B288524FB00658324 /* MainTabBarContoller.swift in Sources */,
 				C3CBD2932887BB2A00658324 /* SettingViewModel.swift in Sources */,
+				C3D7ED7A28912B2200FDB0D4 /* NewsModel.swift in Sources */,
 				C3CBD221288527FA00658324 /* AppStepper.swift in Sources */,
+				C3D7ED7E28912B5200FDB0D4 /* MainStaps.swift in Sources */,
+				C3D7ED9728912B9500FDB0D4 /* ModalView.swift in Sources */,
+				C3D7ED9128912B9500FDB0D4 /* FirstViewController.swift in Sources */,
 				C3CBD28F2886ABF000658324 /* ThirdViewController.swift in Sources */,
-				C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */,
-				C3CBD28B2886966E00658324 /* FirstViewController.swift in Sources */,
-				C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */,
+				C3D7ED6828912AC200FDB0D4 /* NewsFlow.swift in Sources */,
+				C3D7ED9228912B9500FDB0D4 /* FirstView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

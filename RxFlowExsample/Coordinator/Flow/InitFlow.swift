@@ -18,6 +18,7 @@ class InitFlow: Flow {
     
     private let homeFlow = HomeFlow()
     private let settingFlow = SettingFlow()
+    private let newsFlow = NewsFlow()
     
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? MainSteps else { return .none }
@@ -31,12 +32,8 @@ class InitFlow: Flow {
     }
     
     private func setupTabBar() -> FlowContributors {
-        rootViewController.tabBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        rootViewController.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.8695364594, green: 0.8643680215, blue: 0.8735097051, alpha: 1)
-        rootViewController.tabBar.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-    
         /// setup Message ViewController
-        let flows: [Flow] = [homeFlow, settingFlow]
+        let flows: [Flow] = [homeFlow, settingFlow, newsFlow]
         
         Flows.use(flows, when: .ready, block: { [weak self] root in
             guard let `self` = self else { return }
@@ -44,6 +41,6 @@ class InitFlow: Flow {
         })
         return .multiple(flowContributors:
                             [FlowContributor.contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.home)),
-                             FlowContributor.contribute(withNextPresentable: settingFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.setting))])
+                             FlowContributor.contribute(withNextPresentable: settingFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.setting)), FlowContributor.contribute(withNextPresentable: newsFlow, withNextStepper: OneStepper(withSingleStep: MainSteps.newsRequired))])
     }
 }
