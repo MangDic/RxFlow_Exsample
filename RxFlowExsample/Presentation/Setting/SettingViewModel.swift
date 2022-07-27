@@ -14,8 +14,6 @@ import RxCocoa
 enum SettingActionType {
     case nextScreen(step: MainSteps)
     case previousScreen(step: MainSteps)
-    case toast
-    case dismiss
 }
 
 class SettingViewModel: Stepper, ViewModelType {
@@ -51,10 +49,6 @@ extension SettingViewModel {
             moveToNextPage(step: step)
         case .previousScreen(let step):
             moveToPreviousPage(step: step)
-        case .toast:
-            showToast()
-        case .dismiss:
-            dismissToast()
         }
     }
     
@@ -64,13 +58,5 @@ extension SettingViewModel {
     
     private func moveToPreviousPage(step: MainSteps) {
         steps.accept(step)
-    }
-    
-    private func showToast() {
-        steps.accept(MainSteps.modalRequired)
-    }
-    
-    private func dismissToast() {
-        steps.accept(MainSteps.dismiss)
     }
 }

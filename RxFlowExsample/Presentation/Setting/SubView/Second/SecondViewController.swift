@@ -19,7 +19,6 @@ class SecondViewController: UIViewController, ViewModelProtocol {
     let actionRelay = PublishRelay<SettingActionType>()
     
     lazy var secondView = SecondView()
-    lazy var toastView = ModalView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +30,11 @@ class SecondViewController: UIViewController, ViewModelProtocol {
     // MARK: ViewModel Binding
     private func bind() {
         _ = viewModel.transform(req: ViewModel.Input(actionTrigger: actionRelay.asObservable()))
-        
         secondView.setupDI(observable: actionRelay)
-        toastView.setupDI(observable: actionRelay)
     }
     
     private func setupLayout() {
-        view.addSubview(toastView)
-        toastView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        view.addSubview(secondView)
+        secondView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
 }
