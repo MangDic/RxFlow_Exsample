@@ -14,18 +14,17 @@ class MainTabBarContoller: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setupTabBar()
+        setupTabBar()
     }
     
     private func setupTabBar() {
-        tabBar.tintColor = .red
-        self.tabBar.unselectedItemTintColor = .blue
+        /// UIVisualEffectBackdropView 제거
+        tabBar.backgroundImage = UIImage()
+        tabBar.shadowImage = UIImage()
+        tabBar.clipsToBounds = true
         
-        let firstVC = UINavigationController(rootViewController: HomeViewController())
-        firstVC.tabBarItem.selectedImage = UIImage(systemName: "message")
-        firstVC.tabBarItem.title = "Recent"
-        firstVC.tabBarItem.image = UIImage(systemName: "message.fill")
-        
-        viewControllers = [firstVC]
+        tabBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        tabBar.unselectedItemTintColor = #colorLiteral(red: 0.8695364594, green: 0.8643680215, blue: 0.8735097051, alpha: 1)
+        tabBar.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
     }
 }

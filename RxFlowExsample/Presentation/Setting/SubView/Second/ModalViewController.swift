@@ -1,16 +1,15 @@
 //
-//  SecondViewController.swift
+//  ModalViewController.swift
 //  RxFlowExsample
 //
-//  Created by 이명직 on 2022/07/19.
+//  Created by 이명직 on 2022/07/25.
 //
 
-import Foundation
 import UIKit
-import RxRelay
 import RxSwift
+import RxCocoa
 
-class SecondViewController: UIViewController, ViewModelProtocol {
+class ModalViewController: UIViewController, ViewModelProtocol {
     typealias ViewModel = SettingViewModel
     var viewModel: SettingViewModel!
     
@@ -18,7 +17,6 @@ class SecondViewController: UIViewController, ViewModelProtocol {
     
     let actionRelay = PublishRelay<SettingActionType>()
     
-    lazy var secondView = SecondView()
     lazy var toastView = ModalView()
     
     override func viewDidLoad() {
@@ -28,14 +26,11 @@ class SecondViewController: UIViewController, ViewModelProtocol {
         bind()
     }
     
-    // MARK: ViewModel Binding
     private func bind() {
-        _ = viewModel.transform(req: ViewModel.Input(actionTrigger: actionRelay.asObservable()))
-        
-        secondView.setupDI(observable: actionRelay)
+        let _ = viewModel.transform(req: SettingViewModel.Input(actionTrigger: actionRelay.asObservable()))
         toastView.setupDI(observable: actionRelay)
     }
-    
+
     private func setupLayout() {
         view.addSubview(toastView)
         toastView.snp.makeConstraints { $0.edges.equalToSuperview() }

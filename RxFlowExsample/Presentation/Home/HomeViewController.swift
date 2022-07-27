@@ -37,6 +37,7 @@ class HomeViewController: UIViewController, Stepper {
             $0.center.equalToSuperview()
             $0.size.equalTo(CGSize(width: 150, height: 40))
         }
+        
     }
     
     // MARK: Binding

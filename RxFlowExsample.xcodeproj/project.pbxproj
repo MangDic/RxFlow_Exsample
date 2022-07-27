@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C304CBFA288E2C0A007D0CA3 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CBF9288E2C0A007D0CA3 /* ModalView.swift */; };
+		C304CBFC288E53B3007D0CA3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CBFB288E53B3007D0CA3 /* ModalViewController.swift */; };
+		C304CC2128911261007D0CA3 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC2028911261007D0CA3 /* NetworkController.swift */; };
+		C304CC2428911284007D0CA3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC2328911284007D0CA3 /* NewsModel.swift */; };
+		C304CC26289112A0007D0CA3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC25289112A0007D0CA3 /* NewsViewController.swift */; };
+		C304CC28289112AF007D0CA3 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC27289112AF007D0CA3 /* NewsView.swift */; };
+		C304CC2A289112BF007D0CA3 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC29289112BF007D0CA3 /* NewsViewModel.swift */; };
+		C304CC2D2891138E007D0CA3 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC2C2891138E007D0CA3 /* NewsCell.swift */; };
+		C304CC2F289113BF007D0CA3 /* NewsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC2E289113BF007D0CA3 /* NewsFlow.swift */; };
+		C304CC3128911E4E007D0CA3 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304CC3028911E4D007D0CA3 /* NewsService.swift */; };
 		C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A1288933AB00125FA1 /* FirstView.swift */; };
 		C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A3288934BD00125FA1 /* SettingView.swift */; };
 		C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BA80A5288938BF00125FA1 /* SecondView.swift */; };
@@ -39,7 +49,6 @@
 		C3CBD29A2887DBF900658324 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = C3CBD2992887DBF900658324 /* Reusable */; };
 		C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD29B2887DCC200658324 /* ViewModelType.swift */; };
 		C3CBD2A32887E7FD00658324 /* FlowSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2A22887E7FD00658324 /* FlowSugar.swift */; };
-		C3CBD2A52887E90B00658324 /* MessageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBD2A42887E90B00658324 /* MessageFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +69,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C304CBF9288E2C0A007D0CA3 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		C304CBFB288E53B3007D0CA3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C304CC2028911261007D0CA3 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		C304CC2328911284007D0CA3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C304CC25289112A0007D0CA3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C304CC27289112AF007D0CA3 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		C304CC29289112BF007D0CA3 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C304CC2C2891138E007D0CA3 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C304CC2E289113BF007D0CA3 /* NewsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlow.swift; sourceTree = "<group>"; };
+		C304CC3028911E4D007D0CA3 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		C3BA80A1288933AB00125FA1 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		C3BA80A3288934BD00125FA1 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C3BA80A5288938BF00125FA1 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
@@ -92,7 +111,6 @@
 		C3CBD2962887DBBB00658324 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C3CBD29B2887DCC200658324 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C3CBD2A22887E7FD00658324 /* FlowSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowSugar.swift; sourceTree = "<group>"; };
-		C3CBD2A42887E90B00658324 /* MessageFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +142,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+			isa = PBXGroup;
+			children = (
+				C304CC2B28911388007D0CA3 /* Cell */,
+				C304CC2228911279007D0CA3 /* Model */,
+				C304CC1F28911254007D0CA3 /* Service */,
+				C304CC25289112A0007D0CA3 /* NewsViewController.swift */,
+				C304CC27289112AF007D0CA3 /* NewsView.swift */,
+				C304CC29289112BF007D0CA3 /* NewsViewModel.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C304CC1F28911254007D0CA3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C304CC2028911261007D0CA3 /* NetworkController.swift */,
+				C304CC3028911E4D007D0CA3 /* NewsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C304CC2228911279007D0CA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C304CC2328911284007D0CA3 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C304CC2B28911388007D0CA3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C304CC2C2891138E007D0CA3 /* NewsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C3BA809F2889339300125FA1 /* First */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +193,8 @@
 			children = (
 				C3CBD28C2886968D00658324 /* SecondViewController.swift */,
 				C3BA80A5288938BF00125FA1 /* SecondView.swift */,
+				C304CBF9288E2C0A007D0CA3 /* ModalView.swift */,
+				C304CBFB288E53B3007D0CA3 /* ModalViewController.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -244,7 +301,7 @@
 				C3CBD21C288525F200658324 /* HomeFlow.swift */,
 				C3CBD2172885238900658324 /* InitFlow.swift */,
 				C3CBD227288534F200658324 /* SettingFlow.swift */,
-				C3CBD2A42887E90B00658324 /* MessageFlow.swift */,
+				C304CC2E289113BF007D0CA3 /* NewsFlow.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -263,6 +320,7 @@
 			children = (
 				C3CBD2852886962D00658324 /* Home */,
 				C3CBD2882886965000658324 /* Setting */,
+				C304CC1D28911182007D0CA3 /* News */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -465,22 +523,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C304CC2428911284007D0CA3 /* NewsModel.swift in Sources */,
 				C3CBD1DF2885210600658324 /* HomeViewController.swift in Sources */,
 				C3CBD228288534F200658324 /* SettingFlow.swift in Sources */,
 				C3CBD2972887DBBC00658324 /* ViewModel.swift in Sources */,
 				C3CBD2A32887E7FD00658324 /* FlowSugar.swift in Sources */,
+				C304CBFC288E53B3007D0CA3 /* ModalViewController.swift in Sources */,
 				C3CBD28D2886968D00658324 /* SecondViewController.swift in Sources */,
+				C304CC2A289112BF007D0CA3 /* NewsViewModel.swift in Sources */,
+				C304CC2D2891138E007D0CA3 /* NewsCell.swift in Sources */,
 				C3CBD22A2885366100658324 /* Log.swift in Sources */,
 				C3CBD1DB2885210600658324 /* AppDelegate.swift in Sources */,
 				C3BA80A2288933AC00125FA1 /* FirstView.swift in Sources */,
-				C3CBD2A52887E90B00658324 /* MessageFlow.swift in Sources */,
 				C3CBD22C2885372900658324 /* HomeStepper.swift in Sources */,
+				C304CC26289112A0007D0CA3 /* NewsViewController.swift in Sources */,
 				C3CBD29C2887DCC200658324 /* ViewModelType.swift in Sources */,
 				C3CBD21D288525F200658324 /* HomeFlow.swift in Sources */,
+				C304CC2128911261007D0CA3 /* NetworkController.swift in Sources */,
 				C3CBD2162885233400658324 /* MainStaps.swift in Sources */,
 				C3CBD22628852CC000658324 /* InfoViewController.swift in Sources */,
+				C304CBFA288E2C0A007D0CA3 /* ModalView.swift in Sources */,
 				C3CBD21F2885272F00658324 /* SettingViewController.swift in Sources */,
+				C304CC3128911E4E007D0CA3 /* NewsService.swift in Sources */,
 				C3CBD2182885238900658324 /* InitFlow.swift in Sources */,
+				C304CC28289112AF007D0CA3 /* NewsView.swift in Sources */,
 				C3BA80A92889398300125FA1 /* ThirdView.swift in Sources */,
 				C3CBD21B288524FB00658324 /* MainTabBarContoller.swift in Sources */,
 				C3CBD2932887BB2A00658324 /* SettingViewModel.swift in Sources */,
@@ -488,6 +554,7 @@
 				C3CBD28F2886ABF000658324 /* ThirdViewController.swift in Sources */,
 				C3BA80A6288938BF00125FA1 /* SecondView.swift in Sources */,
 				C3CBD28B2886966E00658324 /* FirstViewController.swift in Sources */,
+				C304CC2F289113BF007D0CA3 /* NewsFlow.swift in Sources */,
 				C3BA80A4288934BD00125FA1 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

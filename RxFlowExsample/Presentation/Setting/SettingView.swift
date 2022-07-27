@@ -41,7 +41,7 @@ class SettingView: UIView {
         secondVCButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 guard let `self` = self else { return }
-                self.actionRelay.accept(.nextScreen(step: .secondRequired))
+                self.actionRelay.accept(.nextScreen(step: .modalRequired))
             }).disposed(by: disposeBag)
     }
     
@@ -68,7 +68,7 @@ class SettingView: UIView {
     }
     
     lazy var secondVCButton = UIButton().then {
-        $0.setTitle("Move To SecondVC", for: .normal)
+        $0.setTitle("Show Modal", for: .normal)
         $0.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         $0.layer.cornerRadius = 4
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
