@@ -9,17 +9,16 @@ import RxFlow
 enum MainSteps: Step {
     case initialization
     case back
-    
     case dismiss
     // Main
     case home
     case setting
+    case newsRequired
     // Home
     case infoRequired
     // Setting
     case firstRequired
     case thirdRequired
     case modalRequired
-    // News
-    case newsRequired
 }
+
